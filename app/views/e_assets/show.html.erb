@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @e_asset.tag_id %>
+</p>
+
+<p>
+  <strong>Staff:</strong>
+  <%= @e_asset.staff %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @e_asset.e_type %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @e_asset.make %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @e_asset.location %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @e_asset.model %>
+</p>
+
+<%= link_to 'Edit', edit_e_asset_path(@e_asset) %> |
+<%= link_to 'Back', e_assets_path %>

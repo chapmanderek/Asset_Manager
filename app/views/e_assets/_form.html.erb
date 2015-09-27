@@ -1,10 +1,10 @@
-<%= form_for(@asset) do |f| %>
-  <% if @asset.errors.any? %>
+<%= form_for(@e_asset) do |f| %>
+  <% if @e_asset.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@asset.errors.count, "error") %> prohibited this asset from being saved:</h2>
+      <h2><%= pluralize(@e_asset.errors.count, "error") %> prohibited this e_asset from being saved:</h2>
 
       <ul>
-      <% @asset.errors.full_messages.each do |message| %>
+      <% @e_asset.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -20,12 +20,8 @@
     <%= f.text_field :staff %>
   </div>
   <div class="field">
-    <%= f.label :type %><br>
-    <%= f.text_field :type %>
-  </div>
-  <div class="field">
-    <%= f.label :model %><br>
-    <%= f.text_field :model %>
+    <%= f.label :e_type %><br>
+    <%= f.text_field :e_type %>
   </div>
   <div class="field">
     <%= f.label :make %><br>
@@ -34,6 +30,10 @@
   <div class="field">
     <%= f.label :location %><br>
     <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
   </div>
   <div class="actions">
     <%= f.submit %>

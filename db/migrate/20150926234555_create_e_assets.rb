@@ -1,14 +1,13 @@
-class CreateAssets < ActiveRecord::Migration
+class CreateEAssets < ActiveRecord::Migration
   def change
-    create_table :assets do |t|
+    create_table :e_assets do |t|
       t.string :tag_id
       t.string :staff
-      t.string :type
-      t.string :model
+      t.string :e_type
       t.string :make
       t.string :location
+      t.string :model
       t.text   :notes
-      t.datetime :assigned_date
 
       t.timestamps null: false
     end
