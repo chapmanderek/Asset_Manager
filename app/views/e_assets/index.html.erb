@@ -11,6 +11,8 @@
       <th>Make</th>
       <th>Location</th>
       <th>Model</th>
+      <th>Notes</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +26,7 @@
         <td><%= e_asset.make %></td>
         <td><%= e_asset.location %></td>
         <td><%= e_asset.model %></td>
+        <td><%= e_asset.notes %></td>
         <td><%= link_to 'Show', e_asset %></td>
         <td><%= link_to 'Edit', edit_e_asset_path(e_asset) %></td>
         <td><%= link_to 'Destroy', e_asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>

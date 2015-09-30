@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150926234555) do
+ActiveRecord::Schema.define(version: 20150930222619) do
+
+  create_table "assignment_logs", force: :cascade do |t|
+    t.string   "staff"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "assignments", force: :cascade do |t|
+    t.string   "staff"
+    t.string   "e_asset_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "e_assets", force: :cascade do |t|
     t.string   "tag_id"

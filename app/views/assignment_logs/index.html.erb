@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Assignment Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Staff</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assignment_logs.each do |assignment_log| %>
+      <tr>
+        <td><%= assignment_log.staff %></td>
+        <td><%= link_to 'Show', assignment_log %></td>
+        <td><%= link_to 'Edit', edit_assignment_log_path(assignment_log) %></td>
+        <td><%= link_to 'Destroy', assignment_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Assignment log', new_assignment_log_path %>
