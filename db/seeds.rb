@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+EAsset.delete_all
+EAsset.create!(tag_id: 'E2304567', staff: 'Chapman', e_type: "Staff Laptop")
+EAsset.create!(tag_id: 'E2308967', staff: 'Chapman', e_type: "Staff Desktop", model: 'Apple')
