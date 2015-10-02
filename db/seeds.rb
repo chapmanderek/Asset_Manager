@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 EAsset.delete_all
-EAsset.create!(tag_id: 'E2304567', staff: 'Chapman', e_type: "Staff Laptop")
+EAsset.create!(tag_id: 'E2304567', staff: 'Chapman', e_type: "Staff Laptop", notes: "Golden Image laptop.")
 EAsset.create!(tag_id: 'E2308967', staff: 'Chapman', e_type: "Staff Desktop", model: 'Apple')
 EAsset.create!(tag_id: 'E2305849', staff: 'Cumberlander', e_type: "TV", model: 'Sony')
 EAsset.create!(tag_id: 'E2306758', staff: 'Cumberlander', e_type: "Student Desktop", model: 'Lenovo')
-EAsset.create!(tag_id: 'E2300192', staff: 'Fleischer', e_type: "Staff Laptop", model: 'Apple')
+EAsset.create!(tag_id: 'E2300192', staff: 'Fleischer', e_type: "Staff Laptop", model: 'Apple', notes: "Has scratches on screen button and sides.  Long lots of text.  Lots and lots of text.")

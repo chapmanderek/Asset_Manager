@@ -19,13 +19,13 @@
 
     <% @e_assets.each do |e_asset| %>
       <tr class= "<%= cycle('list_line_odd', 'list_line_even') %> ">
-        <td><%= e_asset.tag_id %></td>
+        <td width = '10%' ><%= e_asset.tag_id %></td>
         <td><%= e_asset.staff %></td>
         <td><%= e_asset.e_type %></td>
         <td><%= e_asset.make %></td>
-        <td><%= e_asset.location %></td>
+        <td width = '15%'><%= e_asset.location %></td>
         <td><%= e_asset.model %></td>
-        <td><%= e_asset.notes %></td>
+        <td width = '25%' ><%= truncate(e_asset.notes, length: 50 )%></td>
 
         <td><%= link_to 'Show', e_asset %></td>
         <td><%= link_to 'Edit', edit_e_asset_path(e_asset) %></td>
