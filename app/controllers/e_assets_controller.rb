@@ -4,7 +4,7 @@ class EAssetsController < ApplicationController
   # GET /e_assets
   # GET /e_assets.json
   def index
-    @e_assets = EAsset.all
+    @e_assets = EAsset.order(:staff)
   end
 
   # GET /e_assets/1
