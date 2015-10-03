@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <h1><tab> Electronic Asset <i>#<%= @e_asset.tag_id %></i></h1> 
+  <hr width = '30%', align = 'left'>
+  <br>
   <strong>Tag:</strong>
   <%= @e_asset.tag_id %>
 </p>
@@ -30,5 +33,12 @@
   <%= @e_asset.model %>
 </p>
 
+<p>
+  <strong>Notes:</strong>
+  <%= @e_asset.notes %>
+</p>
+
+<h2>
 <%= link_to 'Edit', edit_e_asset_path(@e_asset) %> |
 <%= link_to 'Back', e_assets_path %>
+</h2>
