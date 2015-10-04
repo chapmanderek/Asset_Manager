@@ -16,8 +16,9 @@
   </thead>
 
 
-
-    <% @e_assets.each do |e_asset| %>
+<% cache ['catalog', EAsset.latest] do %>
+  <% @e_assets.each do |e_asset| %>
+    <% cache ['entry', e_asset] do %>      
       <tr class= "<%= cycle('list_line_odd', 'list_line_even') %> ">
         <td width = '10%' ><%= e_asset.tag_id %></td>
         <td><%= e_asset.staff %></td>
@@ -32,6 +33,8 @@
         <td><%= link_to 'Delete', e_asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+  <% end %>
+<% end %>
 
 </table>
 
